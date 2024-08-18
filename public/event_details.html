@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1>Movie Night Organizer</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="add_movie.html">Add Movie</a></li>
+                <li><a href="create_event.html">Create Event</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <h2>Event Details</h2>
+     <!--<div id="eventDetails">
+         Event details will be populated dynamically
+    </div>-->
+    <h2>RSVP</h2>
+    <form id="rsvpForm">
+        <div>
+            <label for="rsvp_status">RSVP Status:</label>
+            <select id="rsvp_status" name="rsvp_status" required>
+                <option value="going">Going</option>
+                <option value="not going">Not Going</option>
+                <option value="maybe">Maybe</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit RSVP">
+    </form>
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <div>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required></textarea>
+        </div>
+        <input type="submit" value="Add Comment">
+    </form>
+    <!--<div id="commentsList">
+         Comments will be populated dynamically 
+    </div>-->
+</div>
+<!-- <script src="index.js"></script> -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

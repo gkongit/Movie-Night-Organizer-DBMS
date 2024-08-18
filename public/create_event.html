@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Event</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1>Movie Night Organizer</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="add_movie.html">Add Movie</a></li>
+                <li><a href="event_details.html">Event Details</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <h2>Create Event</h2>
+    <form id="createEventForm">
+        <div>
+            <label for="movie_id">Movie:</label>
+            <select id="movie_id" name="movie_id" required>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <div>
+            <label for="event_date">Event Date:</label>
+            <input type="datetime-local" id="event_date" name="event_date" required>
+        </div>
+        <div>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+        <input type="submit" value="Create Event">
+    </form>
+</div>
+<!-- <script src="index.js"></script> -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

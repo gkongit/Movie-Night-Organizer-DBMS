@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Movie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1>Movie Night Organizer</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="create_event.html">Create Event</a></li>
+                <li><a href="event_details.html">Event Details</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <h2>Add Movie</h2>
+    <form id="addMovieForm">
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required>
+        </div>
+        <div>
+            <label for="release_year">Release Year:</label>
+            <input type="number" id="release_year" name="release_year" required>
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+        <div>
+            <label for="poster_url">Poster URL:</label>
+            <input type="url" id="poster_url" name="poster_url" required>
+        </div>
+        <input type="submit" value="Add Movie">
+    </form>
+</div>
+<!-- <script src="index.js"></script> -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
